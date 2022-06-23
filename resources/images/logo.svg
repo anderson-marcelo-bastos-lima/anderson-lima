@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   inkscape:export-ydpi="96"
+   inkscape:export-xdpi="96"
+   inkscape:export-filename="C:\Project Stage\Art design\Logo\logo.png"
+   id="svgLogoPS"
+   width="30"
+   height="30"
+   version="1.1"
+   viewBox="0 0 7.9374764 7.9373569"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     id="namedview50"
+     showgrid="false"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:zoom="4"
+     inkscape:cx="-20"
+     inkscape:cy="67.625"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g31376"
+     inkscape:pagecheckerboard="0"
+     showguides="false"
+     inkscape:snap-global="true" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient887"
+       x1="120.51"
+       x2="169.75999"
+       y1="207.14"
+       y2="207.14"
+       gradientTransform="translate(-35.271,77.319)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         id="stop1633"
+         stop-color="#002d3b"
+         offset="0" />
+      <stop
+         id="stop1639"
+         stop-color="#005e7a"
+         offset=".36804" />
+      <stop
+         id="stop1641"
+         stop-color="#005e7a"
+         offset=".64153" />
+      <stop
+         id="stop1635"
+         stop-color="#008fba"
+         offset="1" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <text
+     id="text5384"
+     x="64.391479"
+     y="-28.45533"
+     fill="#000000"
+     font-family="sans-serif"
+     font-size="10.583px"
+     letter-spacing="0px"
+     stroke-width="0.26458"
+     word-spacing="0px"
+     style="line-height:1.25"
+     xml:space="preserve"><tspan
+       id="tspan5382"
+       x="64.391479"
+       y="-18.799828"
+       stroke-width="0.26458" /></text>
+  <g
+     id="g1053"
+     transform="translate(-8.1737176,-75.810048)">
+    <g
+       id="g893"
+       transform="translate(0.19316968)">
+      <g
+         id="g31376"
+         transform="translate(-3.6760098,-1.7312433)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777px;line-height:1.25;font-family:Asap;-inkscape-font-specification:'Asap, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ef972d;fill-opacity:1;stroke-width:0.264583"
+           x="16.564438"
+           y="145.41226"
+           id="text22007"><tspan
+             sodipodi:role="line"
+             id="tspan22005"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777px;font-family:Asap;-inkscape-font-specification:'Asap, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ef972d;fill-opacity:1;stroke-width:0.264583"
+             x="16.564438"
+             y="145.41226">INFORMATION TECHNOLOGY</tspan></text>
+        <path
+           id="path8103"
+           style="fill:#002d3b;fill-opacity:1;stroke:none;stroke-width:1.32291"
+           d="m 15.625296,78.202688 a 3.3072819,3.3072819 0 0 0 -3.307282,3.307282 3.3072819,3.3072819 0 0 0 3.307282,3.307282 3.3072819,3.3072819 0 0 0 3.307282,-3.307282 3.3072819,3.3072819 0 0 0 -3.307282,-3.307282 z m -1.150314,1.770429 h 0.226859 c 0.145522,0 0.228706,0.03086 0.24908,0.09198 l 0.960145,2.807055 c 0.0087,0.0291 0.01343,0.05526 0.01343,0.07855 0,0.06403 -0.07307,0.09612 -0.21859,0.09612 h -0.191719 c -0.142612,0 -0.224572,-0.03086 -0.244946,-0.09198 l -0.174149,-0.532266 h -1.030425 l -0.174666,0.532266 c -0.02037,0.06112 -0.08751,0.09198 -0.20102,0.09198 H 13.51432 c -0.177537,0 -0.266133,-0.03209 -0.266133,-0.09612 0,-0.01164 0.0059,-0.0378 0.01757,-0.07855 l 0.960145,-2.807055 c 0.02328,-0.06112 0.106468,-0.09198 0.24908,-0.09198 z m 2.04328,0 h 0.148311 c 0.174627,0 0.261999,0.04691 0.261999,0.140043 v 2.352821 h 0.943092 c 0.04657,0 0.07988,0.01778 0.100252,0.05271 0.02037,0.03492 0.03049,0.09021 0.03049,0.16588 v 0.134876 c 0,0.07567 -0.01012,0.130955 -0.03049,0.16588 -0.02037,0.03493 -0.05369,0.05271 -0.100252,0.05271 h -1.440735 c -0.06112,0 -0.106287,-0.01308 -0.135392,-0.03927 -0.02619,-0.0291 -0.03927,-0.07427 -0.03927,-0.135392 v -2.750211 c 0,-0.09313 0.08737,-0.140043 0.261999,-0.140043 z m -1.943028,0.816485 c -0.0029,0.01746 -0.01006,0.0567 -0.0217,0.117822 -0.0087,0.05821 -0.02304,0.112269 -0.04341,0.161747 l -0.257865,0.776694 h 0.654739 l -0.248565,-0.776694 c -0.02037,-0.05821 -0.04235,-0.151509 -0.06563,-0.279569 z" />
+      </g>
+    </g>
+  </g>
+</svg>

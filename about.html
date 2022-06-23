@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <!-- Specify the character encoding for the HTML document. -->
+    <meta charset="UTF-8">
+
+    <!-- A Mobile-optimized site. Not all devices have the same width;
+        you should ensure that your pages work well in a large variety of screen sizes and orientations. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts - Courgette, Karla, Lato, Oswald, and Raleway. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Karla&family=Lato:wght@400;700&family=Oswald&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- My external CSS file. -->
+    <link type="text/css" rel="stylesheet" href="./resources/css/style.css">
+    <link type="text/css" rel="stylesheet" href="./resources/css/about.css">
+
+    <!-- Page title in modern browsers. -->
+    <title>About</title>
+</head>
+
+<body>
+    <!-- Start - Header Section with semantic HTML. -->
+    <header class="header-section">
+        <!-- Start - Header Logo -->
+        <a href="./index.html">
+            <img src="./resources/images/logo.svg" alt="Logo." role="img" />
+        </a>
+        <!-- End - Header Logo -->
+        <!-- Start - Header Navigation -->
+        <nav>
+            <label for="drop" class="toggle" id="hamburger">&#8801;</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#portfolio-section-anchor">Portfolio</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- End - Header Navigation -->
+    </header>
+    <!-- End - Header Section with semantic HTML. -->
+
+
+
+
+    <!-- Definition and Usage
+        The <main> tag specifies the main content of a document.
+
+        The content inside the <main> element should be unique to the document.
+        It should not contain any content that is repeated across documents such as sidebars, navigation links,
+        copyright information, site logos, and search forms.
+
+        Note: There must not be more than one <main> element in a document.
+        The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.
+    -->
+    <!-- Start - Main Content for portfolio projects or IT articles. -->
+    <main>
+        <!-- Start - Breadcrumb Section -->
+        <ul class="breadcrumb">
+            <li><a href="./index.html" title="Go to Homepage.">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <!-- End - Breadcrumb Section -->
+
+        <!-- Start - Main Content - Title -->
+        <div class="main-hero-section">
+            <p class="hero-category">SYSTEM ANALYSIS / PROJECT MANAGEMENT / BUSINESS</p>
+            <h1 class="hero-title">About</h1>
+        </div>
+        <!-- End - Main Content - Title -->
+        <!-- Start - Article Content -->
+        <article class="article-section">
+
+            <!-- Start - author Introduction -->
+            <section class="author-section">
+                <div class="author-left-col">
+                    <img src="./resources/images/myAvatar.png" alt="Author avatar.">
+                </div>
+                <div class="author-right-col">
+                    <p>
+                        "Hi my name is Anderson Lima. Welcome to my projects page! I am an information technology
+                        professional. I hope you like the different projects for different purposes that I will post
+                        here."
+                    </p>
+                </div>
+            </section>
+            <!-- End - Author Introduction -->
+
+
+        </article>
+        <!-- End - Article Content -->
+    </main>
+    <!-- End - Main Content for portfolio projects or IT articles. -->
+
+
+
+
+    <!-- Start - Footer Section with semantic HTML. -->
+    <footer class="footer-section">
+        <span>© 2022 Anderson Lima</span>
+    </footer>
+    <!-- End - Footer Section with semantic HTML. -->
+
+
+    <!-- Load the Google Chart libraries. -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- My external JavaScript file. -->
+    <script type="text/javascript" src="./resources/js/portfolio.js"></script>
+</body>
+
+</html>

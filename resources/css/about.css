@@ -1,0 +1,320 @@
+/**
+ * This document contains the styles of Anderson Lima's portfolio website about page
+ * divided into the sections below:
+ *
+ * 1. Global Styles.
+ *
+ * 2. Main Section
+ *
+ * 3. Breadcrumb
+ *
+ * 4. Main Hero Section
+ *
+ * 5. Auhtor Section
+ *
+ * 6. Article Section
+ *
+ */
+
+
+
+
+/**
+ * 1. Global Styles.
+ */
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #D3D3D3;
+}
+
+
+
+
+/**
+ * 2. Main Section
+ */
+main {
+    background-color: white;
+    margin: 5% 25%;
+    padding: 5%;
+    border-radius: 15px;
+    height: 55vh;
+}
+
+/**
+ * Common breakpoints for widths of devices:
+ *
+ * 320px — 480px: Mobile devices
+ * 481px — 768px: iPads, Tablets
+ * 769px — 1024px: Small screens, laptops
+ * 1025px — 1200px: Desktops, large screens
+ * 1201px and more —  Extra large screens, TV
+ *
+ * Let's make the Hero Section responsive for all small screens devices.
+ */
+@media all and (max-width : 1024px) {
+
+    main {
+        background-color: white;
+        margin: 0;
+        padding: 10% 5%;
+        border-radius: 0;
+    }
+
+}
+
+
+
+
+/**
+ * 3. Breadcrumb
+ */
+.breadcrumb {
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.breadcrumb li {
+    float: left;
+}
+
+.breadcrumb li a {
+    color: #002d3b;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+    text-decoration: none;
+    padding: 0.3rem 0 0.3rem 2.5rem;
+    background-color: #F0F0F0;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.breadcrumb li a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 25px solid #F0F0F0;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+
+.breadcrumb li a:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+
+.breadcrumb li:first-child a {
+    padding-left: 10px;
+}
+
+.breadcrumb li:last-child a {
+    background-color: #FFEBCD;
+    color: #002d3b;
+    pointer-events: none;
+    cursor: default;
+}
+
+.breadcrumb li:last-child a:after {
+    border-left-color: #FFEBCD;
+}
+
+.breadcrumb li a:hover {
+    background-color: #D3D3D3;
+    ;
+}
+
+.breadcrumb li a:hover:after {
+    border-left-color: #D3D3D3;
+}
+
+
+
+
+/**
+ * 4. Main Hero Section
+ */
+.hero-category {
+    color: #98AFBA;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+}
+
+.hero-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    letter-spacing: 0px;
+    color: #002d3b;
+}
+
+.hero-date {
+    color: #98AFBA;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Courgette', cursive;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.019rem;
+}
+
+.main-hero-section figure img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .3s ease;
+}
+
+.main-hero-section figure figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    letter-spacing: 0px;
+}
+
+
+
+
+/**
+ * 5. Auhtor Section
+ */
+.author-section {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.author-left-col {
+    width: 20%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.author-left-col img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .3s ease;
+}
+
+.author-right-col {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 1.5rem;
+}
+
+.author-right-col p {
+    color: #354A53;
+    font-family: 'Courgette', cursive;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.05rem;
+}
+
+/**
+ * Common breakpoints for widths of devices:
+ *
+ * 320px — 480px: Mobile devices
+ * 481px — 768px: iPads, Tablets
+ * 769px — 1024px: Small screens, laptops
+ * 1025px — 1200px: Desktops, large screens
+ * 1201px and more —  Extra large screens, TV
+ *
+ * Let's make the Hero Section responsive for all small screens devices.
+ */
+@media all and (max-width : 480px) {
+
+    .author-left-col {
+        width: 40%;
+    }
+
+    .author-right-col {
+        width: 60%;
+    }
+
+}
+
+
+
+
+/**
+ * 6. Article Section
+ */
+section h2 {
+    color: #002d3b;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0px;
+}
+
+section p {
+    color: #354A53;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    letter-spacing: 0px;
+}
+
+.article-section figure img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .3s ease;
+}
+
+.article-section figure figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    letter-spacing: 0px;
+}

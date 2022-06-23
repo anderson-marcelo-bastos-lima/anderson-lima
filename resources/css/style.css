@@ -1,0 +1,653 @@
+/**
+ * This document contains the styles of Anderson Lima's portfolio website homepage
+ * divided into the sections below:
+ *
+ * 1. Global Styles.
+ *
+ * 2. Header Section.
+ *
+ * 3. Hero Section.
+ *
+ * 4. Portfolio Section.
+ *
+ * 5. Footer Section.
+ *
+ */
+
+
+
+
+/**
+ * 1. Global Styles.
+ */
+* {
+    margin: 0;
+}
+
+
+
+
+/**
+ * 2. Header Section.
+ */
+/** Logo */
+.header-section {
+    display: flex;
+    justify-content: right;
+    background-color: #F5F5F5;
+    padding: 0rem 1rem;
+}
+
+.header-section img {
+    position: absolute;
+    top: 0.075rem;
+    left: 0.5rem;
+}
+
+/** Navigation */
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    background-color: #F5F5F5;
+}
+
+nav a {
+    display: block;
+    padding: 0 1.25rem;
+    color: #002d3b;
+    line-height: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    padding-left: 0.75rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.063rem;
+}
+
+nav ul li ul li:hover {
+    background: #D3D3D3;
+}
+
+nav a:hover {
+    background-color: #D3D3D3;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 2rem;
+}
+
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+li>a:after {
+    content: ' +';
+}
+
+li>a:only-child:after {
+    content: '';
+}
+
+/**
+ * Common breakpoints for widths of devices:
+ *
+ * 320px — 480px: Mobile devices
+ * 481px — 768px: iPads, Tablets
+ * 769px — 1024px: Small screens, laptops
+ * 1025px — 1200px: Desktops, large screens
+ * 1201px and more —  Extra large screens, TV
+ *
+ * Let's make the responsive menu for all small screens devices.
+ */
+@media all and (max-width : 1024px) {
+
+    .header-section img {
+        top: 0.875rem;
+        left: 0.5rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .toggle+a,
+    .menu {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+        padding: 0 20px;
+        background-color: #F5F5F5;
+        color: #002d3b;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.063rem;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+    }
+
+    #hamburger {
+        text-align: right;
+        font-size: 2rem;
+    }
+
+    #hamburger {
+        text-align: right;
+    }
+
+    .toggle:not(#hamburger):hover {
+        background-color: #D3D3D3;
+    }
+
+    [id^=drop]:checked+ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: #F5F5F5;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #F5F5F5;
+    }
+
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+    }
+
+    nav ul ul li:hover>ul,
+    nav ul li:hover>ul {
+        display: none;
+    }
+
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul ul li {
+        position: static;
+
+    }
+}
+
+
+
+
+/**
+ * 3. Hero Section.
+ */
+.hero-section {
+    display: flex;
+}
+
+.hero-col-text {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-col-text svg {
+    width: 65%;
+    height: 15%;
+}
+
+/** 3.1 Start elements with 0 opacity for the writing effect. */
+#a1,
+#n1,
+#d1,
+#e1,
+#r1,
+#s1,
+#o1,
+#n1-2,
+#l2,
+#i2,
+#m2,
+#a2,
+#i3,
+#n3,
+#f3,
+#o3,
+#r3,
+#m3,
+#a3,
+#t3,
+#i3-2,
+#o3-2,
+#n3-2,
+#t4,
+#e4,
+#c4,
+#h4,
+#n4,
+#o4,
+#l4,
+#o4-2,
+#g4,
+#y4 {
+    stroke-opacity: 0;
+    fill-opacity: 0;
+}
+
+/** 3.2 Styling the hero buttons. */
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+.hero-btn {
+    width: 130px;
+    height: 40px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 5px;
+    padding: 0.625rem 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.primary-hero-btn {
+    color: #fff;
+    background: #ef972d;
+    background: linear-gradient(90deg, #ef972d 0%, #ba5d00ff 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 2.625rem;
+    padding: 0;
+    border: none;
+
+}
+
+.secondary-hero-btn {
+    color: #002d3b;
+    background: #ef972d;
+    background: linear-gradient(90deg, hsla(33, 86%, 56%, 0.5) 0%, #ef972d 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 2.625rem;
+    padding: 0;
+    border: 0;
+}
+
+.hero-btn span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-btn:before,
+.hero-btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #ba5d00ff;
+    transition: all 2s ease;
+}
+
+.hero-btn:before {
+    height: 0%;
+    width: 2px;
+}
+
+.hero-btn:after {
+    width: 0%;
+    height: 2px;
+}
+
+.hero-btn:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.hero-btn:hover:before {
+    height: 100%;
+}
+
+.hero-btn:hover:after {
+    width: 100%;
+}
+
+.hero-btn span:hover {
+    color: #ef972d;
+}
+
+.hero-btn span:before,
+.hero-btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #ba5d00ff;
+    transition: all 2s ease;
+}
+
+.hero-btn span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.hero-btn span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.hero-btn span:hover:before {
+    height: 100%;
+}
+
+.hero-btn span:hover:after {
+    width: 100%;
+}
+
+/** 3.3 The right column of the hero with animation to change the background-image. */
+.hero-col-img {
+    height: 100vh;
+    width: 50%;
+    background-image: url("../images/hero-note-inspire.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-col-img {
+    animation-delay: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 20s;
+    animation-name: changeBg;
+    opacity: 0;
+}
+
+/** Background-image rotation animation with four pictures. */
+@keyframes changeBg {
+
+    0%,
+    100% {
+        background-image: url("../images/hero-note-inspire.jpg");
+    }
+
+    25% {
+        background-image: url("../images/hero-project-meeting.jpg");
+    }
+
+    50% {
+        background-image: url("../images/hero-scrum-board.jpg");
+    }
+
+    75% {
+        background-image: url("../images/hero-code.jpg");
+    }
+}
+
+/**
+ * Common breakpoints for widths of devices:
+ *
+ * 320px — 480px: Mobile devices
+ * 481px — 768px: iPads, Tablets
+ * 769px — 1024px: Small screens, laptops
+ * 1025px — 1200px: Desktops, large screens
+ * 1201px and more —  Extra large screens, TV
+ *
+ * Let's make the Hero Section responsive for all small screens devices.
+ */
+@media all and (max-width : 1024px) {
+
+    .hero-col-img {
+        display: none;
+    }
+
+    .hero-col-text {
+        width: 100%;
+    }
+
+    .hero-col-text svg {
+        width: 90%;
+        height: 15%;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .secondary-hero-btn {
+        margin-top: 1.5rem;
+    }
+
+}
+
+
+
+
+/**
+ * 4. Portfolio Section.
+ */
+.portfolio-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5rem 3rem;
+}
+
+.portfolio-item {
+    margin: 2rem;
+    font-size: 1rem;
+    height: 100%;
+    /*
+    background-color: #F5F5F4;
+    box-shadow: 5px 10px 18px #D3D3D3;
+    */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+.pi-img-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.portfolio-item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1);
+}
+
+.pi-category {
+    color: #98AFBA;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+}
+
+.pi-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0px;
+    color: #002d3b;
+}
+
+.pi-date {
+    color: #98AFBA;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Courgette', cursive;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.019rem;
+}
+
+.pi-text {
+    color: #354A53;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    letter-spacing: 0px;
+}
+
+.pi-links {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pi-links a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    letter-spacing: 0.063rem;
+}
+
+.pi-links a:link {
+    color: #98AFBA;
+    padding: 0.75rem;
+    border: 1px solid #98AFBA;
+}
+
+.pi-links a:visited {
+    color: #98AFBA;
+}
+
+.pi-links a:hover {
+    color: #002d3b;
+    background-color: #F5F5F5;
+    border: 1px solid #002d3b;
+}
+
+.pi-links a:active {
+    color: #002d3b;
+    background-color: #F5F5F5;
+}
+
+/**
+ * Common breakpoints for widths of devices:
+ *
+ * 320px — 480px: Mobile devices
+ * 481px — 768px: iPads, Tablets
+ * 769px — 1024px: Small screens, laptops
+ * 1025px — 1200px: Desktops, large screens
+ * 1201px and more —  Extra large screens, TV
+ *
+ * Let's make the Portfolio Section responsive for all small screens devices.
+ */
+@media all and (max-width : 1024px) {
+
+    .portfolio-section {
+        grid-template-columns: 1fr;
+        padding: 5rem 1rem;
+    }
+
+    .portfolio-item {
+        display: block;
+        margin: 5rem auto;
+    }
+
+}
+
+
+
+
+/**
+ * 5. Footer Section.
+ */
+.footer-section {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    background-color: #F5F5F5;
+    color: #002d3b;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    letter-spacing: 0px;
+}

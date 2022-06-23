@@ -1,0 +1,514 @@
+/**
+ * This document contains the styles of Anderson Lima's portfolio website project page
+ * divided into the sections below:
+ *
+ * 1. Global Styles.
+ *
+ * 2. Main Section
+ *
+ * 3. Breadcrumb
+ *
+ * 4. Main Hero Section
+ *
+ * 5. Article Section
+ *
+ * 6. Aside Section
+ *
+ */
+
+
+
+
+/**
+ * 1. Global Styles.
+ */
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #D3D3D3;
+}
+
+
+
+
+/**
+ * 2. Main Section
+ */
+main {
+    background-color: white;
+    margin: 5% 25%;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+/**
+ * Common breakpoints for widths of devices:
+ *
+ * 320px — 480px: Mobile devices
+ * 481px — 768px: iPads, Tablets
+ * 769px — 1024px: Small screens, laptops
+ * 1025px — 1200px: Desktops, large screens
+ * 1201px and more —  Extra large screens, TV
+ *
+ * Let's make the Hero Section responsive for all small screens devices.
+ */
+@media all and (max-width : 1024px) {
+
+    main {
+        background-color: white;
+        margin: 0;
+        padding: 10% 5%;
+        border-radius: 0;
+    }
+
+}
+
+
+
+
+/**
+ * 3. Breadcrumb
+ */
+.breadcrumb {
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.breadcrumb li {
+    float: left;
+}
+
+.breadcrumb li a {
+    color: #002d3b;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+    text-decoration: none;
+    padding: 0.3rem 0 0.3rem 2.5rem;
+    background-color: #F0F0F0;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.breadcrumb li a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 25px solid #F0F0F0;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+
+.breadcrumb li a:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+
+.breadcrumb li:first-child a {
+    padding-left: 10px;
+}
+
+/*
+.breadcrumb li:nth-child(2) a {
+    background: lightblue;
+}
+
+.breadcrumb li:nth-child(2) a:after {
+    border-left-color: lightblue;
+}
+
+.breadcrumb li:nth-child(3) a {
+    background: lightcoral;
+}
+
+.breadcrumb li:nth-child(3) a:after {
+    border-left-color: lightcoral;
+}
+
+.breadcrumb li:nth-child(4) a {
+    background: lightgoldenrodyellow;
+}
+
+.breadcrumb li:nth-child(4) a:after {
+    border-left-color: lightgoldenrodyellow;
+}
+
+.breadcrumb li:nth-child(5) a {
+    background: lightseagreen;
+}
+
+.breadcrumb li:nth-child(5) a:after {
+    border-left-color: lightseagreen;
+}
+*/
+.breadcrumb li:last-child a {
+    background-color: #FFEBCD;
+    color: #002d3b;
+    pointer-events: none;
+    cursor: default;
+}
+
+.breadcrumb li:last-child a:after {
+    border-left-color: #FFEBCD;
+}
+
+.breadcrumb li a:hover {
+    background-color: #D3D3D3;
+    ;
+}
+
+.breadcrumb li a:hover:after {
+    border-left-color: #D3D3D3;
+}
+
+/**
+ * A option for responsive breadcrumb.
+@media all and (max-width : 1024px) {
+
+    .breadcrumb {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .breadcrumb li a {
+        margin-top: 0.1rem;
+        padding: 0.3rem 0 0.3rem 0.3rem;
+        width: 100%;
+    }
+
+    .breadcrumb li a:after {
+        display: none;
+    }
+
+    .breadcrumb li a:before {
+        display: none;
+    }
+
+}
+*/
+
+
+
+
+/**
+ * 4. Main Hero Section
+ */
+.hero-category {
+    color: #98AFBA;
+    margin-bottom: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+}
+
+.hero-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    letter-spacing: 0px;
+    color: #002d3b;
+}
+
+.hero-date {
+    color: #98AFBA;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Courgette', cursive;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.019rem;
+}
+
+.main-hero-section figure img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .3s ease;
+}
+
+.main-hero-section figure figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    letter-spacing: 0px;
+}
+
+
+
+
+/**
+ * 5. Article Section
+ */
+section h2 {
+    color: #002d3b;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0px;
+}
+
+section p {
+    color: #354A53;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    letter-spacing: 0px;
+}
+
+.article-section figure img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .3s ease;
+}
+
+.article-section figure figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    letter-spacing: 0px;
+}
+
+.cta-article {
+    background-color: #D3D3D3;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border: 1px solid lightgray;
+    background-color: #F5F5F4;
+    box-shadow: 5px 10px 18px #D3D3D3;
+    border-radius: 15px;
+}
+
+.cta-article p {
+    color: #002d3b;
+    padding-top: 2rem;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.article-buttons {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.article-btn {
+    width: 130px;
+    height: 40px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 5px;
+    padding: 0.625rem 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.primary-article-btn {
+    color: #fff;
+    background: #ef972d;
+    background: linear-gradient(90deg, #ef972d 0%, #ba5d00ff 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 2.625rem;
+    padding: 0;
+    border: none;
+
+}
+
+.secondary-article-btn {
+    color: #002d3b;
+    background: #ef972d;
+    background: linear-gradient(90deg, hsla(33, 86%, 56%, 0.5) 0%, #ef972d 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 2.625rem;
+    padding: 0;
+    border: 0;
+}
+
+.article-btn span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.article-btn:before,
+.article-btn:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #ba5d00ff;
+    transition: all 2s ease;
+}
+
+.article-btn:before {
+    height: 0%;
+    width: 2px;
+}
+
+.article-btn:after {
+    width: 0%;
+    height: 2px;
+}
+
+.article-btn:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.article-btn:hover:before {
+    height: 100%;
+}
+
+.article-btn:hover:after {
+    width: 100%;
+}
+
+.article-btn span:hover {
+    color: #ef972d;
+}
+
+.article-btn span:before,
+.article-btn span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #ba5d00ff;
+    transition: all 2s ease;
+}
+
+.article-btn span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.article-btn span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.article-btn span:hover:before {
+    height: 100%;
+}
+
+.article-btn span:hover:after {
+    width: 100%;
+}
+
+/**
+ * Common breakpoints for widths of devices:
+ *
+ * 320px — 480px: Mobile devices
+ * 481px — 768px: iPads, Tablets
+ * 769px — 1024px: Small screens, laptops
+ * 1025px — 1200px: Desktops, large screens
+ * 1201px and more —  Extra large screens, TV
+ *
+ * Let's make the Hero Section responsive for all small screens devices.
+ */
+@media all and (max-width : 1024px) {
+
+    .cta-article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+
+/**
+ * 6. Aside Section
+ */
+.aside-section {
+    display: flex;
+}
+
+.aside-left-col {
+    overflow: hidden;
+    width: 10%;
+}
+
+.aside-left-col img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .3s ease;
+}
+
+.aside-right-col {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 1.5rem;
+
+    color: #354A53;
+    font-family: 'Courgette', cursive;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.019rem;
+}
