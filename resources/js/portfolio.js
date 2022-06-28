@@ -2,13 +2,15 @@
 
 1. Function draw a graph.
 
-2. Chart - Colmar Academy
+2. Chart - Colmar Academy.
 
-3. Chart - Task Planner
+3. Chart - Task Planner.
 
-4. Chart - Gryffindors Portfolio
+4. Chart - Gryffindors Portfolio.
 
-5. Chart - Flexblog
+5. Chart - Flexblog.
+
+6. Chart - Todofy.
 
 */
 
@@ -61,7 +63,7 @@ function drawChart(pDataArray, pTagDivId) {
 
 /*
  ************************************************************
- * 2. Chart - Colmar Academy
+ * 2. Chart - Colmar Academy.
  ************************************************************
  */
 // Array with the values to feed the graph.
@@ -90,7 +92,7 @@ window.addEventListener('resize', function () {
 
 /*
  ************************************************************
- * 3. Chart - Task Planner
+ * 3. Chart - Task Planner.
  ************************************************************
  */
 // Array with the values to feed the graph.
@@ -120,7 +122,7 @@ window.addEventListener('resize', function () {
 
 /*
  ************************************************************
- * 4. Chart - Gryffindors Portfolio
+ * 4. Chart - Gryffindors Portfolio.
  ************************************************************
  */
 // Array with the values to feed the graph.
@@ -150,7 +152,7 @@ window.addEventListener('resize', function () {
 
 /*
  ************************************************************
- * 5. Chart - Flexblog
+ * 5. Chart - Flexblog.
  ************************************************************
  */
 // Array with the values to feed the graph.
@@ -173,4 +175,34 @@ document.addEventListener('DOMContentLoaded', function () {
 // Load the chart when the window is resized for responsiveness.
 window.addEventListener('resize', function () {
     drawChart(chartFlexblog, divFlexblog);
+});
+
+
+
+
+/*
+ ************************************************************
+ * 5. Chart - Todofy.
+ ************************************************************
+ */
+// Array with the values to feed the graph.
+const chartTodofy = [
+    ['Skills', 'Percentage', { role: 'style' }],
+    ['Project management', 1, 'fill-color: #008fba; fill-opacity: 0.7'],
+    ['Problem-solving', 0.75, 'fill-color: #00ABC2; fill-opacity: 0.7'],
+    ['Manipulation of the DOM', 1, 'fill-color: #00C5B8; fill-opacity: 0.7'],
+    ['localStorage', 0.5, 'fill-color: #55DCA0; fill-opacity: 0.7'],
+    ['JavaScript', 1.0, 'fill-color: #A8ED84; fill-opacity: 0.7'],
+    ['CSS', 0.5, 'fill-color: #F9F871; fill-opacity: 0.7'],
+    ['HTML', 0.5, 'fill-color: #008fba; fill-opacity: 0.7']
+];
+// Name of the property "Id" of the "DIV" tag to place the graph.
+const divTodofy = 'todofy_div';
+// Load the chart when all elements of the DOM are loaded.
+document.addEventListener('DOMContentLoaded', function () {
+    drawChart(chartTodofy, divTodofy);
+});
+// Load the chart when the window is resized for responsiveness.
+window.addEventListener('resize', function () {
+    drawChart(chartTodofy, divTodofy);
 });

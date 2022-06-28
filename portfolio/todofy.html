@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <!-- Specify the character encoding for the HTML document. -->
+    <meta charset="UTF-8">
+
+    <!-- A Mobile-optimized site. Not all devices have the same width;
+        you should ensure that your pages work well in a large variety of screen sizes and orientations. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts - Courgette, Karla, Lato, Oswald, and Raleway. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Karla&family=Lato:wght@400;700&family=Oswald&family=Raleway:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- My external CSS file. -->
+    <link type="text/css" rel="stylesheet" href="../resources/css/style.css">
+    <link type="text/css" rel="stylesheet" href="../resources/css/portfolio.css">
+
+    <!-- Page title in modern browsers. -->
+    <title>Project: Todofy</title>
+</head>
+
+<body>
+    <!-- Start - Header Section with semantic HTML. -->
+    <header class="header-section">
+        <!-- Start - Header Logo -->
+        <a href="../index.html">
+            <img src="../resources/images/logo.svg" alt="Logo." role="img" />
+        </a>
+        <!-- End - Header Logo -->
+        <!-- Start - Header Navigation -->
+        <nav>
+            <label for="drop" class="toggle" id="hamburger">&#8801;</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#portfolio-section-anchor">Portfolio</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- End - Header Navigation -->
+    </header>
+    <!-- End - Header Section with semantic HTML. -->
+
+
+
+
+    <!-- Definition and Usage
+        The <main> tag specifies the main content of a document.
+
+        The content inside the <main> element should be unique to the document.
+        It should not contain any content that is repeated across documents such as sidebars, navigation links,
+        copyright information, site logos, and search forms.
+
+        Note: There must not be more than one <main> element in a document.
+        The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element.
+    -->
+    <!-- Start - Main Content for portfolio projects or IT articles. -->
+    <main>
+        <!-- Start - Breadcrumb Section -->
+        <ul class="breadcrumb">
+            <li><a href="../index.html" title="Go to Homepage.">Home</a></li>
+            <li><a href="../index.html#portfolio-section-anchor" title="Go to Portfolio.">Portfolio</a></li>
+            <li><a href="#">Programming</a></li>
+        </ul>
+        <!-- End - Breadcrumb Section -->
+
+        <!-- Start - Main Content - Title -->
+        <div class="main-hero-section">
+            <p class="hero-category">DEVELOPMENT / HTML / CSS / JAVASCRIPT</p>
+            <h1 class="hero-title">Project: Todofy</h1>
+            <p class="hero-date">on June 28, 2022</p>
+            <figure>
+                <img src="../resources/images/portfolio/todofy/todofy-mobile.png"
+                    alt="Photo of a mobile phone showing the Todofy app on the screen." role="img">
+                <figcaption>Photo of a mobile phone showing the Todofy app on the screen.</figcaption>
+            </figure>
+        </div>
+        <!-- End - Main Content - Title -->
+        <!-- Start - Article Content -->
+        <article class="article-section">
+            <section>
+                <h2>About The Project</h2>
+                <p>
+                    The Todofy project was a great opportunity to develop an application with the possibility of
+                    registering your username and password on the "Sign Up Page", logging into the application on the
+                    "Log In Page" and creating your to-do tasks on the "Todofy Page".
+                </p>
+                <p>
+                    The application was developed with HTML, CSS and Javascript and the localStore resource in a
+                    client-side environment is responsible for storing the information.
+                </p>
+                <p>
+                    There are many possibilities that can be realized with concepts and technologies in this project. I
+                    hope you had a great experience browsing this project.
+                </p>
+                <figure>
+                    <img src="../resources/images/portfolio/todofy/todofy-screenshot.jpg"
+                        alt="Screenshot of the desktop version of the Todofy app." />
+                    <figcaption>Screenshot of the desktop version of the Todofy app.</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <p>
+                    Imagine trying to fly a plane after reading a book, watching a video, or even attending a
+                    day-long training class. The truth is, practicing and getting feedback is the only way to become
+                    proficient in a new skill.
+                </p>
+                <p>
+                    In his book <a
+                        href="https://www.amazon.com.au/Peak-Secrets-New-Anders-Ericsson/dp/0544947223/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr="
+                        target="_blank" title="See the book on amazon.com.au">
+                        Peak: Secrets from the New Science of Expertise </a>, Anders Ericsson explains how
+                    deliberate practice is harnessed.
+                </p>
+                <p>
+                    This project was an opportunity to practice different skills, as shown in the chart below:
+                </p>
+
+                <figure>
+                    <div id="todofy_div"></div>
+                    <figcaption>Skill utilization percentage graph.</figcaption>
+                </figure>
+            </section>
+            <section>
+                <div class="cta-article">
+                    <p>Give it a star and get a copy of the code.</p>
+                    <div class="article-buttons">
+                        <button class="primary-article-btn article-btn"
+                            onClick="window.open('https://github.com/anderson-marcelo-bastos-lima/todofy/stargazers', '_blank');"><span>Give
+                                It a
+                                Star!</span></button>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- End - Article Content -->
+        <!-- Start - Aside Content -->
+        <aside class="aside-section">
+            <div class="aside-left-col">
+                <img src="../resources/images/myAvatar.png" alt="Author avatar.">
+            </div>
+            <div class="aside-right-col">
+                <p itemscope itemtype="http://schema.org/Person" class="aside-author">
+                    Author:
+                    <span itemprop="name">Anderson Lima</span>,
+                    <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="addressLocality">Sydney</span>,
+                        <span itemprop="addressRegion">Australia.</span>
+                    </span>
+                </p>
+            </div>
+        </aside>
+        <!-- End - Aside Content -->
+    </main>
+    <!-- End - Main Content for portfolio projects or IT articles. -->
+
+
+
+
+    <!-- Start - Footer Section with semantic HTML. -->
+    <footer class="footer-section">
+        <span>© 2022 Anderson Lima</span>
+    </footer>
+    <!-- End - Footer Section with semantic HTML. -->
+
+
+    <!-- Load the Google Chart libraries. -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- My external JavaScript file. -->
+    <script type="text/javascript" src="../resources/js/portfolio.js"></script>
+</body>
+
+</html>
