@@ -14,6 +14,8 @@
 
 7. Chart - Tarefa.
 
+8. Chart - Shopping Cart.
+
 */
 
 
@@ -184,7 +186,7 @@ window.addEventListener('resize', function () {
 
 /*
  ************************************************************
- * 5. Chart - Todofy.
+ * 6. Chart - Todofy.
  ************************************************************
  */
 // Array with the values to feed the graph.
@@ -214,7 +216,7 @@ window.addEventListener('resize', function () {
 
 /*
  ************************************************************
- * 6. Chart - Tarefa.
+ * 7. Chart - Tarefa.
  ************************************************************
  */
 // Array with the values to feed the graph.
@@ -237,4 +239,34 @@ document.addEventListener('DOMContentLoaded', function () {
 // Load the chart when the window is resized for responsiveness.
 window.addEventListener('resize', function () {
     drawChart(chartTarefa, divTarefa);
+});
+
+
+
+
+/*
+ ************************************************************
+ * 8. Chart - Shopping Cart.
+ ************************************************************
+ */
+// Array with the values to feed the graph.
+const chartShoppingCart = [
+    ['Skills', 'Percentage', { role: 'style' }],
+    ['Project management', 1, 'fill-color: #008fba; fill-opacity: 0.7'],
+    ['Time management', 0.75, 'fill-color: #00ABC2; fill-opacity: 0.7'],
+    ['Problem-solving', 0.75, 'fill-color: #00C5B8; fill-opacity: 0.7'],
+    ['React', 1, 'fill-color: #55DCA0; fill-opacity: 0.7'],
+    ['Bootstrap', 0.5, 'fill-color: #A8ED84; fill-opacity: 0.7'],
+    ['JavaScript', 1, 'fill-color: #F9F871; fill-opacity: 0.7'],
+    ['HTML', 0.5, 'fill-color: #008fba; fill-opacity: 0.7']
+];
+// Name of the property "Id" of the "DIV" tag to place the graph.
+const divShoppingCart = 'shopping_cart_div';
+// Load the chart when all elements of the DOM are loaded.
+document.addEventListener('DOMContentLoaded', function () {
+    drawChart(chartShoppingCart, divShoppingCart);
+});
+// Load the chart when the window is resized for responsiveness.
+window.addEventListener('resize', function () {
+    drawChart(chartShoppingCart, divShoppingCart);
 });
