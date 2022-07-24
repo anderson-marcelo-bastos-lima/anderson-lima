@@ -513,14 +513,14 @@ li>a:only-child:after {
 .portfolio-item {
     margin: 2rem;
     font-size: 1rem;
-    height: 100%;
+    height: auto;
     /*
     background-color: #F5F5F4;
     box-shadow: 5px 10px 18px #D3D3D3;
     */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 
 .pi-img-container {
